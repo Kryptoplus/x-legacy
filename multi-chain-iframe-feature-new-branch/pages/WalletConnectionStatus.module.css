@@ -1,0 +1,29 @@
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 0 5%;
+  text-align: center;
+  color: black;
+}
+
+/* Styles for devices with a maximum width of 600px */
+@media screen and (max-width: 600px) {
+  .message {
+    padding: 0 10%; /* Increase horizontal padding on smaller screens */
+    /* add more styles for mobile here if needed */
+  }
+}
+
+.message {
+  line-height: 1.6; /* Adjust this value for desired spacing between lines */
+}
+
+@font-face {
+  font-family: 'CardiumARegular';
+  src: url("/public/Cardium A Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+

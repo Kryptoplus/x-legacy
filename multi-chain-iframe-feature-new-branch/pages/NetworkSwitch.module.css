@@ -1,0 +1,96 @@
+.switchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  margin-top: -25px;
+}
+
+.switch {
+  width: 200px;
+  height: 44px;
+  background-color: #ffffff;
+  border: 1.5px solid #e6eaf0;
+  border-radius: 22px;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+.switch.active {
+  background-color: #f7fafd;
+}
+
+.circle {
+  width: 96px;
+  height: 36px;
+  background-color: #1a2b22;
+  border-radius: 18px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.switch.active .circle {
+  left: calc(100% - 98px);
+}
+
+.networkLabel {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.networkIcons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.networkIcon {
+  width: 96px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.networkIcon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.networkIcon.active {
+  opacity: 0;
+}
+
+/* Hover effects */
+.switch:hover {
+  border-color: #7b61ff;
+  box-shadow: 0 2px 12px rgba(123,97,255,0.08);
+}
+
+/* Active state for the circle */
+.circle {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Smooth transition for all interactive elements */
+.switch, .circle, .networkIcon {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

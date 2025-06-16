@@ -1,0 +1,193 @@
+/* index.module.css */
+
+.connectedButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.connectedButton button {
+  background-color: rgb(49, 48, 48);
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.connectedButton button:hover {
+  background-color: rgba(133, 130, 128, 0.2);
+}
+
+.connectedContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* This defines the space between the children. Adjust as needed. */
+}
+
+.footer {
+  margin-top: auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.fullXf {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.headersteps {
+  display: flex;
+  flex-direction: row; /* Changed from column to row */
+  align-items: center; /* Ensures vertical alignment of all items in the container */
+  justify-content: center; /* Centers the items horizontally */
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center; /* Centers the text */
+}
+
+.headersteps .svgIcon {
+  height: 20px;
+  width: auto;
+  vertical-align: middle;
+  margin: 0 5px; /* Adds 5px margin on both sides */
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.learnMore {
+  position: sticky; /* Stick to a position on scroll */
+  bottom: 50px; /* Adjust this value based on the height of your footer */
+  z-index: 1000; /* Ensures it stays on top of other content */
+  width: 100%; /* Ensures it spans the full width */
+  text-align: center; /* Centers the text */
+  font-weight: bold; /* Bold the text */
+  padding: 10px 0; /* Vertical padding for aesthetics */
+  color: #228dc6;
+  text-decoration: none; /* Removes underline */
+  display: inline-block; /* Ensures it can apply padding */
+  cursor: pointer; /* Changes cursor to pointer to indicate it's clickable */
+  margin: 0 auto; /* Center horizontally */
+  font-size: 13px;
+  animation: bounce 2s ease infinite; /* Applies the bounce animation */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-5px); /* Reduced to a very small bounce */
+  }
+  60% {
+    transform: translateY(-2px); /* Very subtle secondary bounce */
+  }
+}
+
+.pdfViewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 1050;
+  overflow: auto; /* Enables scrolling */
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 500px) {
+  .pdfViewer {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+  }
+}
+
+.objectPdf {
+  width: 100vw;  /* Full width to fill the container */
+  height: 100vh; /* Full height to use the entire viewer area */
+}
+
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px; /* Adjust size as needed */
+  font-weight: bold; /* Make the text bolder */
+  background-color: white; /* Set background color to white */
+  color: #f05b26; /* Set the text color to black or any other color as needed */
+  padding: 3px 10px; /* Add some padding around the text */
+  border: 2px solid #ae4620; /* Add a black border */
+  border-radius: 5px; /* Optional: add rounded corners */
+  cursor: pointer;
+  z-index: 1051;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: add a shadow for better visibility */
+  animation: bounceDown 0.5s ease-in-out;
+
+}
+
+@keyframes bounceDown {
+  0%, 100% {
+    transform: translateY(0) !important;
+  }
+  50% {
+    transform: translateY(5px) !important;
+  }
+}

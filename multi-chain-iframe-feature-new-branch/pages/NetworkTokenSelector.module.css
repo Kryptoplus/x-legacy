@@ -1,0 +1,133 @@
+/* Container for the selector */
+.selectorContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* SVG-based Dropdown Icon */
+.dropdownIcon {
+    cursor: pointer;
+    width: 150px; /* Adjust width to fit your SVG design */
+    height: auto;  /* Maintain aspect ratio */
+    transition: transform 0.2s ease-in-out;
+    margin-top: -40px;
+}
+
+.dropdownIcon:hover {
+    transform: scale(1.05);
+}
+
+/* Modal Overlay */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modalContent {
+    width: 320px;
+    height: 440px; /* Fixed height for consistent size */
+    max-width: 90%;
+    background-color: #1a1a2e;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    position: relative; /* For positioning the close button */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures balanced spacing */
+    overflow-y: auto; /* Allows scrolling if content exceeds height */
+}
+
+/* Close Button */
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Modal Header */
+.modalHeader {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #444;
+    margin-bottom: 5px;
+}
+
+/* Back button styling */
+.backButton {
+    background: none;
+    border: none;
+    color: #ccc;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+/* Section Title */
+.sectionTitle {
+    font-size: 16px;
+    font-weight: bold;
+    color: #aaa;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+/* Network and Token List */
+.networkList, .tokenList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-grow: 1; /* Allows lists to take up available space */
+}
+
+/* Network and Token Item Styling */
+.networkItem, .tokenItem {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #2e2e4d;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.networkItem:hover, .tokenItem:hover {
+    background-color: #3b3b5e;
+    transform: scale(1.02);
+}
+
+.activeItem {
+    background-color: #3b3b5e;
+}
+
+/* Icon Styling for Each Option */
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+/* Text Styling */
+.networkItem span, .tokenItem span {
+    font-size: 16px;
+    color: #fff;
+}

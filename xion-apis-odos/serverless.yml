@@ -1,0 +1,345 @@
+service: api-service
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  environment:
+    # RELAYER_API_KEY: ${env:RELAYER_API_KEY}
+    # RELAYER_API_SECRET: ${env:RELAYER_API_SECRET}
+    # RPC_URL: ${env:RPC_URL}
+    # INTEGRATOR_ID: ${env:INTEGRATOR_ID}
+    DB_HOST: ${env:DB_HOST}
+    DB_USER: ${env:DB_USER}
+    DB_PASSWORD: ${env:DB_PASSWORD}
+    DB_NAME: ${env:DB_NAME}
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "sqs:ReceiveMessage"
+        - "sqs:DeleteMessage"
+        - "sqs:GetQueueAttributes"
+      Resource:
+        - "arn:aws:sqs:us-east-1:646965651787:TransactionHashQueue"
+
+functions:
+  getQuote:
+    handler: getQuote.handler
+    timeout: 30
+    events:
+      - http:
+          path: /getQuote
+          method: post
+          cors: true
+  execute:
+    handler: execute.handler
+    timeout: 30
+    events:
+      - http:
+          path: /execute
+          method: post
+          cors: true
+  getStatus:
+    handler: getStatus.handler
+    timeout: 30
+    events:
+      - http:
+          path: /getStatus
+          method: post
+          cors: true
+  processPurchase:
+    handler: processPurchase.handler
+    timeout: 30
+    events:
+      - http:
+          path: /processPurchase
+          method: post
+          cors: true
+  transactionHash:
+    handler: transactionHash.handler
+    timeout: 30
+    events:
+      - http:
+          path: /transactionHash
+          method: post
+          cors: true
+  txHashQueue:
+    handler: txHashQueue.handler
+    timeout: 30
+    events:
+      - http:
+          path: /txHashQueue
+          method: post
+          cors: true
+  deadLetterQueue:
+    handler: deadLetterQueue.handler
+    timeout: 30
+    events:
+      - http:
+          path: /deadLetterQueue
+          method: post
+          cors: true
+  getQuotePayments:
+    handler: getQuotePayments.handler
+    timeout: 30
+    events:
+      - http:
+          path: /getQuotePayments
+          method: post
+          cors: true
+  multichainExecute:
+    handler: multichainExecute.handler
+    timeout: 30
+    events:
+      - http:
+          path: /multichainExecute
+          method: post
+          cors: true
+  getStatusMultichain:
+    handler: getStatusMultichain.handler
+    timeout: 30
+    events:
+      - http:
+          path: /getStatusMultichain
+          method: post
+          cors: true
+  getStatusSource:
+    handler: getStatusSource.handler
+    timeout: 30
+    events:
+      - http:
+          path: /getStatusSource
+          method: post
+          cors: true
+  generateJwt:
+    handler: generateJwt.handler
+    timeout: 30
+    events:
+      - http:
+          path: /generateJwt
+          method: post
+          cors: true
+  XPayout:
+    handler: XPayout.handler
+    timeout: 30
+    events:
+      - http:
+          path: /XPayout
+          method: post
+          cors: true
+  XPayoutFetchData:
+    handler: XPayoutFetchData.handler
+    timeout: 30
+    events:
+      - http:
+          path: /XPayoutFetchData
+          method: get
+          cors: true
+  XPayoutGroupData:
+    handler: XPayoutGroupData.handler
+    timeout: 30
+    events:
+      - http:
+          path: /XPayoutGroupData
+          method: post
+          cors: true
+  XPayoutGetTxId:
+    handler: XPayoutGetTxId.handler
+    timeout: 30
+    events:
+      - http:
+          path: /XPayoutGetTxId
+          method: post
+          cors: true
+  PayoutSQSQueue:
+    handler: PayoutSQSQueue.handler
+    timeout: 30
+    events:
+      - http:
+          path: /PayoutSQSQueue
+          method: post
+          cors: true
+  DeadLetterQueuePayout:
+    handler: DeadLetterQueuePayout.handler
+    timeout: 30
+    events:
+      - http:
+          path: /DeadLetterQueuePayout
+          method: post
+          cors: true
+  XPayoutCustomerQuery:
+    handler: XPayoutCustomerQuery.handler
+    timeout: 30
+    events:
+      - http:
+          path: /XPayoutCustomerQuery
+          method: post
+          cors: true
+  XPayoutTransactionQuery:
+    handler: XPayoutTransactionQuery.handler
+    timeout: 30
+    events:
+      - http:
+          path: /XPayoutTransactionQuery
+          method: post
+          cors: true
+  XPayoutAnalyticsQuery:
+    handler: XPayoutAnalyticsQuery.handler
+    timeout: 30
+    events:
+      - http:
+          path: /XPayoutAnalyticsQuery
+          method: post
+          cors: true
+  XPayoutMerchantProfile:
+    handler: XPayoutMerchantProfile.handler
+    timeout: 30
+    events:
+      - http:
+          path: /XPayoutMerchantProfile
+          method: post
+          cors: true
+  XPayoutMerchantProfileQuery:
+    handler: XPayoutMerchantProfileQuery.handler
+    timeout: 30
+    events:
+      - http:
+          path: /XPayoutMerchantProfileQuery
+          method: post
+          cors: true
+  XPayoutMerchantProfileDelete:
+    handler: XPayoutMerchantProfileDelete.handler
+    timeout: 30
+    events:
+      - http:
+          path: /XPayoutMerchantProfileDelete
+          method: post
+          cors: true
+  multichainTxConfirmation:
+    handler: multichainTxConfirmation.handler
+    timeout: 30
+    events:
+      - http:
+          path: /multichainTxConfirmation
+          method: post
+          cors: true
+  multichainDeadLetterQueue:
+    handler: multichainDeadLetterQueue.handler
+    timeout: 30
+    events:
+      - http:
+          path: /multichainDeadLetterQueue
+          method: post
+          cors: true
+  multichainSourceTxStatus:
+    handler: multichainSourceTxStatus.handler
+    timeout: 30
+    events:
+      - http:
+          path: /multichainSourceTxStatus
+          method: post
+          cors: true
+  aaveOtc:
+    handler: aaveOtc.handler
+    timeout: 30
+    events:
+      - http:
+          path: /aaveOtc
+          method: post
+          cors: true
+  aaveWithdraw:
+    handler: aaveWithdraw.handler
+    timeout: 30
+    events:
+      - http:
+          path: /aaveWithdraw
+          method: post
+          cors: true
+  getQuoteOpen:
+    handler: getQuoteOpen.handler
+    timeout: 30
+    events:
+      - http:
+          path: /getQuoteOpen
+          method: post
+          cors: true
+  aaveInterest:
+    handler: aaveInterest.handler
+    timeout: 30
+    events:
+      - http:
+          path: /aaveInterest
+          method: post
+          cors: true
+  OTC:
+    handler: OTC.handler
+    timeout: 30
+    events:
+      - http:
+          path: /OTC
+          method: post
+          cors: true
+  OtcSupply:
+    handler: OtcSupply.handler
+    timeout: 30
+    events:
+      - http:
+          path: /OtcSupply
+          method: post
+          cors: true
+  OtcWithdraw:
+    handler: OtcWithdraw.handler
+    timeout: 30
+    events:
+      - http:
+          path: /OtcWithdraw
+          method: post
+          cors: true
+  OtcWithdrawNoInterest:
+    handler: OtcWithdrawNoInterest.handler
+    timeout: 30
+    events:
+      - http:
+          path: /OtcWithdrawNoInterest
+          method: post
+          cors: true
+  getQuoteAny:
+    handler: getQuoteAny.handler
+    timeout: 30
+    events:
+      - http:
+          path: /getQuoteAny
+          method: post
+          cors: true
+  multiWallet:
+    handler: multiWallet.handler
+    timeout: 30
+    events:
+      - http:
+          path: /multiWallet
+          method: post
+          cors: true
+  depositUsdtForChip:
+    handler: depositUsdtForChip.handler
+    timeout: 30
+    events:
+      - http:
+          path: /depositUsdtForChip
+          method: post
+          cors: true
+  withdrawChipForUsdt:
+    handler: withdrawChipForUsdt.handler
+    timeout: 30
+    events:
+      - http:
+          path: /withdrawChipForUsdt
+          method: post
+          cors: true
+plugins:
+  - serverless-dotenv-plugin
+  - serverless-prune-plugin
+  - serverless-offline
+
+custom:
+  prune:
+    automatic: true
+    number: 3 # Keep only the last 5 versions of each function

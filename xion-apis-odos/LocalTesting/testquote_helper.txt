@@ -1,0 +1,21 @@
+// BNB
+
+{
+    "body": "{\"toAmount\":\"0.1\",\"toAddress\":\"0xc03FBE6Df3EC13af06785dc4233D6d92EF4DB47b\",\"fromAddress\":\"0xc03FBE6Df3EC13af06785dc4233D6d92EF4DB47b\",\"fromCurrency\":\"BUSD\",\"fromNetwork\":\"Bnb\",\"toCurrency\":\"USDT\",\"toNetwork\":\"Polygon\"}"
+}
+
+// AVAX
+
+{
+    "body": "{\"toAmount\":\"0.1\",\"toAddress\":\"0xc03FBE6Df3EC13af06785dc4233D6d92EF4DB47b\",\"fromAddress\":\"0xc03FBE6Df3EC13af06785dc4233D6d92EF4DB47b\",\"fromCurrency\":\"USDC\",\"fromNetwork\":\"Avalanche\",\"toCurrency\":\"USDT\",\"toNetwork\":\"Polygon\"}"
+}
+
+// POLYGON
+{
+    "body": "{\"toAmount\":\"0.1\",\"toAddress\":\"0xc03FBE6Df3EC13af06785dc4233D6d92EF4DB47b\",\"fromAddress\":\"0xc03FBE6Df3EC13af06785dc4233D6d92EF4DB47b\",\"fromCurrency\":\"USDC\",\"fromNetwork\":\"Polygon\",\"toCurrency\":\"USDT\",\"toNetwork\":\"Polygon\"}"
+}
+
+BASE
+{
+    "body": "{\"toAmount\":\"0.1\",\"toAddress\":\"0xc03FBE6Df3EC13af06785dc4233D6d92EF4DB47b\",\"fromAddress\":\"0xc03FBE6Df3EC13af06785dc4233D6d92EF4DB47b\",\"fromCurrency\":\"USDC\",\"fromNetwork\":\"Base\",\"toCurrency\":\"USDT\",\"toNetwork\":\"Polygon\"}"
+}

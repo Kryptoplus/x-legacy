@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+@font-face {
+  font-family: "TitilliumWeb-Regular";
+  src: url("/public/TitilliumWeb-Regular.ttf"); 
+  font-weight: 400;
+}
+@font-face {
+  font-family: "TitilliumWeb-SemiBold";
+  src: url("/public/TitilliumWeb-SemiBold.ttf");
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("/public/Oswald-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "TitilliumWeb-Bold";
+  src: url("/public/TitilliumWeb-Bold.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "AcuminProExtraCond-ExtraLight";
+  src: url("/public/Acumin Pro ExtraCond ExtraLight.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "AcuminProExtraCond-Medium";
+  src: url("/public/Acumin Pro ExtraCond Medium.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Acumin Pro ExtraCondensed";
+  src: url("/public/Acumin Pro ExtraCond Thin.otf");
+  font-weight: 100;
+}
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-titilliumweb-bold: TitilliumWeb-Bold;
+  --font-acuminproextracond-medium: AcuminProExtraCond-Medium;
+  --font-acumin-pro-extracondensed: "Acumin Pro ExtraCondensed";
+  --font-acuminproextracond-extralight: AcuminProExtraCond-ExtraLight;
+  --font-oswald-regular: Oswald-Regular;
+  --font-titilliumweb-regular: TitilliumWeb-Regular;
+  --font-titilliumweb-semibold: TitilliumWeb-SemiBold;
+  --font-oswald: Oswald;
+
+  /* font sizes */
+  --font-size-sm-3: 13.3px;
+  --font-size-227xl-1: 246.1px;
+  --font-size-85xl-8: 104.8px;
+  --font-size-21xl: 40px;
+  --font-size-mid-3: 17.3px;
+  --font-size-lgi-2: 19.2px;
+  --font-size-3xs: 10px;
+  --font-size-32xl-6: 51.6px;
+  --font-size-xs-6: 11.6px;
+  --font-size-lgi-3: 19.3px;
+  --font-size-2xl-7: 21.7px;
+  --font-size-31xl: 50px;
+  --font-size-10xl: 29px;
+  --font-size-smi-7: 12.7px;
+  --font-size-mini: 15px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-fuchsia: #ff00ff;
+  --color-gray: #fcfcfc;
+  --color-blue: #6300ff;
+  --color-deepskyblue-100: #33a4d8;
+  --color-deepskyblue-200: #29a5dc;
+  --color-whitesmoke-100: #f9f9f9;
+  --color-whitesmoke-200: #f7f8f9;
+  --color-cornflowerblue: #3f89d5;
+  --color-lightcoral: #fa9393;
+  --color-dimgray: #707070;
+
+  /* border radiuses */
+  --br-6xs: 7px;
+  --br-lg: 18px;
+  --br-3xs: 10px;
+}
+
+@font-face {
+  font-family: 'CardiumARegular';
+  src: url('/Cardium A Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-family: 'CardiumARegular'!important;
+}
+
+/* Place this at the very end of your CSS file */
+* {
+  font-family: 'CardiumARegular'!important;
+}
+
+
+
+.dynamic-shadow-dom {
+  --dynamic-connect-button-background: #228dc6;
+  --dynamic-connect-button-color: #fefefe;
+  --dynamic-connect-button-border: none;
+  --dynamic-connect-button-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  --dynamic-connect-button-background-hover: #1c709d;
+  --dynamic-connect-button-color-hover: #1c709d;
+  --dynamic-connect-button-border-hover: none;
+  --dynamic-connect-button-shadow-hover: 0 3px 7px rgba(0, 0, 0, 0.2);
+  --dynamic-text-size-button-primary: 14px;
+  --dynamic-font-family-primary: "CardiumARegular";
+  --dynamic-border-radius: 6px;
+  
+}
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="570"
+   height="570"
+   viewBox="0 0 570 570"
+   fill="none"
+   version="1.1"
+   id="svg911"
+   sodipodi:docname="Base-icon.svg"
+   inkscape:version="1.2.1 (9c6d41e4, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs915" />
+  <sodipodi:namedview
+     id="namedview913"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.41403509"
+     inkscape:cx="285"
+     inkscape:cy="285"
+     inkscape:window-width="1309"
+     inkscape:window-height="456"
+     inkscape:window-x="224"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg911" />
+  <path
+     d="M389.712 0.601562H180.575C81.1639 0.601562 0.575195 81.1904 0.575195 180.602V389.738C0.575195 489.15 81.164 569.739 180.575 569.739H389.712C489.123 569.739 569.712 489.15 569.712 389.738V180.602C569.712 81.1903 489.123 0.601562 389.712 0.601562Z"
+     fill="#0052FF"
+     id="path907" />
+  <path
+     d="M284.801 469.671C380.423 469.671 457.994 392.154 457.994 296.478C457.994 200.856 380.477 123.285 284.801 123.285C194.112 123.285 119.631 193.104 112.259 281.896H341.123V311.006H112.259C119.631 399.852 194.112 469.671 284.801 469.671Z"
+     fill="white"
+     id="path909" />
+</svg>

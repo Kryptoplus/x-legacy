@@ -1,0 +1,10 @@
+{
+    "0xb31f66aa3c1e785363f0875a1b74e27b85fd66c7": {
+        "rpcUrl": "https://avalanche.public-rpc.com",
+        "spenderAddress": "0x7a1b05FAB2B9A5A0669BAe799D1c9ee29EC53D0c"
+    },
+    "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913": {
+        "rpcUrl": "https://base.llamarpc.com",
+        "spenderAddress": "0x96a7Ce8Fb73fABD172850870adDA2b565033C949"
+    }
+}

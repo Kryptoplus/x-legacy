@@ -1,0 +1,17 @@
+{
+    "Avalanche": {
+        "gasToken": "AVAX",
+        "chainId": 43114,
+        "gasTokenUuid": "dvUj0CzDZ"
+    },
+    "Polygon": {
+        "gasToken": "MATIC",
+        "chainId": 137,
+        "gasTokenUuid": "uW2tk-ILY0ii"
+    },
+    "Base": {
+        "gasToken": "ETH",
+        "chainId": 8453,
+        "gasTokenUuid": "razxDUgYGNAdQ"
+    }
+}

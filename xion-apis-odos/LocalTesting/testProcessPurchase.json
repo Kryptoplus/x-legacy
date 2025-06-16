@@ -1,0 +1,7 @@
+{
+    "amount": 0.01,
+    "buyerAddress": "3aKVAEsQirTuBoC8d3QxbGyR91q7e8oseDF9q7wn63bS",
+    "solanaWalletAddress": "9pC9PWxb9Xwb4Y3vkCvvAAwE4BTqsf9mGQiUZjM1uZwn",
+    "merchantWebhook": "https://webhook-gamma-jade.vercel.app/api/webhook",
+    "referenceID": "product1testingsolana"
+}

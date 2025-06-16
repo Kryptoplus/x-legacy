@@ -1,0 +1,294 @@
+{
+    "Avalanche": {
+        "gasToken": "AVAX",
+        "chainId": "43114",
+        "gasTokenUuid": "dvUj0CzDZ",
+        "gasTokenDecimals": 18,
+        "toCurrency": {
+            "USDC": {
+            "uuid": "aKzUVe4Hh_CON",
+            "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+            "decimals": 6
+        },
+        "USDT": {
+            "uuid": "HIVsRcGKkPFtW",
+            "address": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+            "decimals": 6
+        }
+    },
+        "fromCurrency": {
+            "WAVAX": {
+                "uuid": "bp2Dg_0XX",
+                "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
+                "decimals": 18
+            },
+            "USDC": {
+                "uuid": "aKzUVe4Hh_CON",
+                "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+                "decimals": 6
+            },
+            "USDT": {
+                "uuid": "HIVsRcGKkPFtW",
+                "address": "0x9702230a8ea53601f5cd2dc00fdbc13d4df4a8c7",
+                "decimals": 6
+            }
+        },
+        "rpcUrl": "https://weathered-wiser-frost.avalanche-mainnet.quiknode.pro/334089b80d669d1fa0f7017f8139427fd6fc8b18/ext/bc/C/rpc/",
+        "squidSpenderAddress": "0xa7fFB35C7f24cbf76C5e1B109e27Bb923D7054C3",
+        "lifiSpenderAddress": "0x48AC08659194E065160AACA88E0fd54e0914e77e",
+        "dlnSpenderAddress": "0x48AC08659194E065160AACA88E0fd54e0914e77e"
+    },
+    "Polygon": {
+        "gasToken": "MATIC",
+        "chainId": "137",
+        "gasTokenUuid": "uW2tk-ILY0ii",
+        "gasTokenDecimals": 18,
+        "toCurrency": {
+            "USDT": {
+                "uuid": "HIVsRcGKkPFtW",
+                "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+                "decimals": 6
+            },
+            "WMATIC": {
+                "uuid": "ormesffXw",
+                "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+                "decimals": 18
+            },
+            "USDC": {
+                "uuid": "aKzUVe4Hh_CON",
+                "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+                "decimals": 6
+            }
+        },
+        "fromCurrency": {
+            "WMATIC": {
+                "uuid": "ormesffXw",
+                "address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270",
+                "decimals": 18
+            },
+            "USDC": {
+                "uuid": "aKzUVe4Hh_CON",
+                "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+                "decimals": 6
+            },
+            "WBTC": {
+                "uuid": "x4WXHge-vvFY",
+                "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
+                "decimals": 8
+            },
+            "WETH": {
+                "uuid": "Mtfb0obXVh59u",
+                "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+                "decimals": 18
+            },
+            "ZARP": {
+                "uuid": "mk64pHpPUD3",
+                "address": "0xb755506531786C8aC63B756BaB1ac387bACB0C04",
+                "decimals": 18
+            },
+            "USDT": {
+                "uuid": "HIVsRcGKkPFtW",
+                "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+                "decimals": 6
+            }
+        },
+        "rpcUrl": "https://quiet-alpha-card.matic.quiknode.pro/c29dcda8375770b9a14f0c8abd032661e0efee5c/",
+        "squidSpenderAddress": "0xa7fFB35C7f24cbf76C5e1B109e27Bb923D7054C3",
+        "lifiSpenderAddress": "0x5B8b6e2B3B7bD6D1236E500d1B1e5B3adD7C0fC2",
+        "dlnSpenderAddress": "0x5B8b6e2B3B7bD6D1236E500d1B1e5B3adD7C0fC2"
+    },
+    "Base": {
+        "gasToken": "ETH",
+        "chainId": "8453",
+        "gasTokenUuid": "razxDUgYGNAdQ",
+        "gasTokenDecimals": 18,
+        "toCurrency": {
+            "USDC": {
+            "uuid": "aKzUVe4Hh_CON",
+            "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+            "decimals": 6
+        },
+        "CBBTC": {
+                "uuid": "77vKuKtKH",
+                "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+                "decimals": 8
+            }
+    },
+        "fromCurrency": {
+            "USDC": {
+                "uuid": "aKzUVe4Hh_CON",
+                "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+                "decimals": 6
+            },
+            "CBBTC": {
+                "uuid": "77vKuKtKH",
+                "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+                "decimals": 8
+            }
+        },"rpcUrl": "https://palpable-little-slug.base-mainnet.quiknode.pro/f22156844ac000ab15453958a5e25520020d9720/",
+        "squidSpenderAddress": "0xa7fFB35C7f24cbf76C5e1B109e27Bb923D7054C3",
+        "lifiSpenderAddress": "0x8c9a69405170f247470aa05900d4cf35484B5172",
+        "dlnSpenderAddress": "0x8c9a69405170f247470aa05900d4cf35484B5172"
+    },
+    "Bnb": {
+        "gasToken": "BNB",
+        "chainId": "56",
+        "gasTokenUuid": "WcwrkfNI4FUAe",
+        "gasTokenDecimals": 18,
+        "toCurrency": {
+            "BSC-USD": {
+                "uuid": "i5jggxiwp",
+                "address": "0x55d398326f99059ff775485246999027b3197955",
+                "decimals": 18
+            },
+            "BTCB": {
+                "uuid": "9_jH48RBW",
+                "address": "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
+                "decimals": 18
+            },
+            "BUSD": {
+                "uuid": "vSo2fu9iE1s0Y",
+                "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+                "decimals": 18
+            },
+            "WETH": {
+                "uuid": "Mtfb0obXVh59u",
+                "address": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+                "decimals": 18
+            }
+        },
+        "fromCurrency": {
+            "BUSD": {
+                "uuid": "vSo2fu9iE1s0Y",
+                "address": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+                "decimals": 18
+            },
+            "BSC-USD": {
+                "uuid": "i5jggxiwp",
+                "address": "0x55d398326f99059ff775485246999027b3197955",
+                "decimals": 18
+            },
+            "BTCB": {
+                "uuid": "9_jH48RBW",
+                "address": "0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c",
+                "decimals": 18
+            },
+            "WETH": {
+                "uuid": "Mtfb0obXVh59u",
+                "address": "0x2170ed0880ac9a755fd29b2688956bd959f933f8",
+                "decimals": 18
+            }
+        },
+        "rpcUrl": "https://spring-weathered-pine.bsc.quiknode.pro/c2e6c57c07c7ea233ed551e21e5e7f3a59666868/",
+        "squidSpenderAddress": "0xB31674FD66a7620AC4EE9CA94e349Dc3682414b8",
+        "lifiSpenderAddress": "0x541BdDEE578a2035c0b30798d33933a4b6083790",
+        "dlnSpenderAddress": "0x541BdDEE578a2035c0b30798d33933a4b6083790"
+    },
+    "Bitcoin": {
+        "gasToken": "satoshi",
+        "chainId": "bitcoin",
+        "gasTokenUuid": "Qwsogvtv82FCd",
+        "gasTokenDecimals": 8,
+        "toCurrency": {
+            "BTC": {
+                "uuid": "Qwsogvtv82FCd",
+                "address": "native",
+                "decimals": 8
+            }
+        },
+        "fromCurrency": {
+            "BTC": {
+                "uuid": "Qwsogvtv82FCd",
+                "address": "native",
+                "decimals": 8
+            }
+        },
+        "rpcUrl": "https://bitcoin-rpc.publicnode.com",
+        "spenderAddress": "native"
+    },
+    "Solana": {
+        "gasToken": "SOL",
+        "chainId": "solana-mainnet-beta",
+        "gasTokenUuid": "zNZHO_Sjf",
+        "gasTokenDecimals": 9,
+        "toCurrency": {
+            "SOL": {
+                "uuid": "zNZHO_Sjf",
+                "address": "native",
+                "decimals": 9
+            },
+            "USDC": {
+                "uuid": "aKzUVe4Hh_CON",
+                "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                "decimals": 6
+            }
+        },
+        "fromCurrency": {
+            "SOL": {
+                "uuid": "zNZHO_Sjf",
+                "address": "native",
+                "decimals": 9
+            },
+            "USDC": {
+                "uuid": "aKzUVe4Hh_CON",
+                "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+                "decimals": 6
+            }
+        },
+        "rpcUrl": "https://fluent-cosmopolitan-patron.solana-mainnet.quiknode.pro/18ab6c68fc21ecc31d10afbde4fb13be00f9be04/",
+        "spenderAddress": "native"
+    },
+    "Arbitrum": {
+        "gasToken": "ETH",
+        "chainId": "42161",
+        "gasTokenUuid": "razxDUgYGNAdQ",
+        "gasTokenDecimals": 18,
+        "toCurrency": {
+            "USDC": {
+                "uuid": "aKzUVe4Hh_CON",
+                "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+                "decimals": 6
+            },
+            "LINK": {
+                "uuid": "VLqpJwogdhHNb","address": "0x514910771af9ca656af840dff83e8264ecf986ca",
+                "decimals": 18
+            },
+            "USDS": {
+                "uuid": "iCJJM4B36",
+                "address": "0x6491c05A82219b8D1479057361ff1654749b876b",
+                "decimals": 6
+            },
+            "UNI": {
+                "uuid": "_H5FVG9iW",
+                "address": "0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0",
+                "decimals": 18
+            }
+        },
+        "fromCurrency": {
+            "USDC": {
+                "uuid": "aKzUVe4Hh_CON",
+                "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+                "decimals": 6
+            },
+            "LINK": {
+                "uuid": "VLqpJwogdhHNb",
+                "address": "0x514910771af9ca656af840dff83e8264ecf986ca",
+                "decimals": 18
+            },
+            "USDS": {
+                "uuid": "iCJJM4B36",
+                "address": "0x6491c05A82219b8D1479057361ff1654749b876b",
+                "decimals": 6
+            },
+            "UNI": {
+                "uuid": "_H5FVG9iW",
+                "address": "0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0",
+                "decimals": 18
+            }
+        },
+        "rpcUrl": "https://thrumming-boldest-patron.arbitrum-mainnet.quiknode.pro/e5be30bc57e3e3d14a3ef3ef588ea24b27fd8354/",
+        "squidSpenderAddress": "0xa7fFB35C7f24cbf76C5e1B109e27Bb923D7054C3",
+        "lifiSpenderAddress": "0x92F4573ef5688B5082a983ab3c5D8189eA8fD20b",
+        "dlnSpenderAddress": "0x92F4573ef5688B5082a983ab3c5D8189eA8fD20b"
+    }
+}

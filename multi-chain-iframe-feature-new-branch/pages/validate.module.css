@@ -1,0 +1,99 @@
+.buyUSDT {
+    background-color: #f05b26 !important; 
+    color: #fefefe !important; 
+    border: none !important;
+    padding: 6px 15px !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2) !important; /* This line adds the subtle shadow */
+}
+
+.buyUSDT:hover {
+    background-color: #ae4620 !important; 
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2)!important; /* This line enhances the shadow a bit on hover */
+}
+
+.centerButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px; /* Optional: reduce space on top */
+}
+
+.messageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.messageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.message {
+    font-size: 14px;
+    color: black;
+    line-height: 1.6; /* Adjust this value for desired spacing between lines */
+    margin-top: 1px;
+    margin-bottom: 3px; /* Reduced margin to minimize the gap */
+}
+
+/* Styles for devices with a maximum width of 600px */
+@media screen and (max-width: 100px) {
+    .message {
+        padding: 0 10%; /* Increase horizontal padding on smaller screens */
+        /* add more styles for mobile here if needed */
+    }
+}
+
+@font-face {
+    font-family: 'CardiumARegular';
+    src: url("/public/Cardium A Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Modal styles */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modalContent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.closeButton {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeButton:hover,
+.closeButton:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

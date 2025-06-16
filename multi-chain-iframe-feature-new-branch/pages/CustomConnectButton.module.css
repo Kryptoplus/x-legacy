@@ -1,0 +1,17 @@
+/* CustomConnectButton.module.css */
+.connectWalletButton {
+    background: linear-gradient(90deg, #7b61ff 0%, #2fd7b2 100%)!important; /* MATCH MAX BUTTON */
+    color: #fff!important;
+    border: none !important;
+    padding: 13px 30px !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(123,97,255,0.08)!important; /* MATCH MAX BUTTON */
+    
+}
+  
+.connectWalletButton:hover {
+    background-color: linear-gradient(90deg, #07050e 0%, #2fd7b2 100%);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2)!important; /* This line enhances the shadow a bit on hover */
+}

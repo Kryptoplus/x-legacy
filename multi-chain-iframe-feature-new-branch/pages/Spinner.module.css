@@ -1,0 +1,28 @@
+/* Spinner.module.css */
+
+.spinnerOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 120px;
+  height: 120px;
+  z-index: 2000;
+  object-fit: contain;
+  pointer-events: none;  
+  margin-top: -150px;
+}

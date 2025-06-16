@@ -1,0 +1,134 @@
+{
+  "CHIP": {
+    "name": "CHIP",
+    "address": "0x14a2D1fA84600C40D62Bb2344777D70Cbe883F51",
+    "constructorArgs": {
+      "name": "CHIP",
+      "symbol": "CHIP",
+      "initialOwner": "0x95a8d4962fca4af2f4411426f645cBa911E59248"
+    },
+    "implementation": "0xD71A64bbEC36e38E28fd6D84123b311986f47611",
+    "proxy": "0x14a2D1fA84600C40D62Bb2344777D70Cbe883F51"
+  },
+  "polygon": {
+    "CasinoPaymentRegistry": {
+      "proxyAddress": "0x382639a8eE38317eB8622e8eFCc0c47c0f481314",
+      "implementationAddress": "0x7183db82bd7a58771223fA4f06e790b5426fd917",
+      "deployer": "0x95a8d4962fca4af2f4411426f645cBa911E59248",
+      "transactionHash": "0x4dfe8d5c3a7e5d20cf12c335442b31c006c32e5ecde90cc38512fe594ee3a11d",
+      "blockNumber": 72524054,
+      "timestamp": "2025-06-08T17:53:05.139Z",
+      "initializerArgs": {
+        "initialOwner": "0x95a8d4962fca4af2f4411426f645cBa911E59248",
+        "initialPlatformFeeBps": "100",
+        "initialFeeRecipient": "0x73C73ad9da98Cf4b424574991A8404AcC70dA040"
+      }
+    },
+    "CasinoTreasury": {
+      "implementationAddress": "0x755Da086f90098D1e1305FF9ddf37f9Be495078f",
+      "deployer": "0x95a8d4962fca4af2f4411426f645cBa911E59248",
+      "transactionHash": "0x77b2316ec75a812ad12ed4524d5722bd885bb70085efe63153a1895911f65288",
+      "blockNumber": 72524128,
+      "timestamp": "2025-06-08T17:55:42.615Z",
+      "initializerArgs": {
+        "registryAddress": "0x382639a8eE38317eB8622e8eFCc0c47c0f481314",
+        "casinoId": 0,
+        "initialTreasuryOwner": "0x95a8d4962fca4af2f4411426f645cBa911E59248"
+      }
+    },
+    "Casinos": {
+      "0": {
+        "owner": "0x95a8d4962fca4af2f4411426f645cBa911E59248",
+        "treasuryAddress": "0xdfB2Ad34FA4044CF68531029704AeB9951046dBf",
+        "registrationTimestamp": "2025-06-08T17:57:06.074Z",
+        "transactionHash": "0x617a2751b64f24369e556d091b39d447f949b57fea8b06ee7733dbc3e9560cd8",
+        "blockNumber": 72524168,
+        "initialAdmins": [
+          "0x95a8d4962fca4af2f4411426f645cBa911E59248"
+        ],
+        "initialTokens": [
+          "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+          "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+          "0x14a2D1fA84600C40D62Bb2344777D70Cbe883F51"
+        ],
+        "proxy": {
+          "address": "0xdfB2Ad34FA4044CF68531029704AeB9951046dBf",
+          "deployer": "0x95a8d4962fca4af2f4411426f645cBa911E59248",
+          "transactionHash": "0x617a2751b64f24369e556d091b39d447f949b57fea8b06ee7733dbc3e9560cd8",
+          "blockNumber": 72524168,
+          "timestamp": "2025-06-08T17:57:06.074Z",
+          "initializerArgs": {
+            "registryAddress": "0x382639a8eE38317eB8622e8eFCc0c47c0f481314",
+            "casinoId": "0",
+            "initialTreasuryOwner": "0x0d66D0Ef52e3A23F6F7b0faF97c25591D8Cb528a"
+          }
+        },
+        "vault": {
+          "address": "0x933Fae08d4185Ea2005c943eF006322771df7AB6",
+          "deployer": "0x95a8d4962fca4af2f4411426f645cBa911E59248",
+          "transactionHash": "0x3856e34214481b08455693c8d79d145b0f19d7c522f8cd21560be5c572a1cf53",
+          "blockNumber": 72524204,
+          "timestamp": "2025-06-08T17:58:47.063Z",
+          "constructorArgs": {
+            "usdt": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+            "usdc": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+            "aPolUsdt": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
+            "aPolUsdc": "0xA4D94019934D8333Ef880ABFFbF2FDd611C762BD",
+            "aavePool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+            "chip": "0x14a2D1fA84600C40D62Bb2344777D70Cbe883F51",
+            "casinoTreasury": "0xdfB2Ad34FA4044CF68531029704AeB9951046dBf",
+            "initialOwner": "0x0d66D0Ef52e3A23F6F7b0faF97c25591D8Cb528a",
+            "name": "SigmaVault",
+            "symbol": "sVUSD"
+          }
+        }
+      },
+      "1": {
+        "owner": "0x95a8d4962fca4af2f4411426f645cBa911E59248",
+        "treasuryAddress": "0xe5bF3D6a1f70ad27B2671113fE513927d6e6565F",
+        "registrationTimestamp": "2025-06-08T18:24:48.856Z",
+        "transactionHash": "0xe807a5d1358363c3b60f8a7d423ebb26002c01524176ab872b51098b34a20272",
+        "blockNumber": 72524950,
+        "initialAdmins": [
+          "0x95a8d4962fca4af2f4411426f645cBa911E59248"
+        ],
+        "initialTokens": [
+          "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+          "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+          "0x14a2D1fA84600C40D62Bb2344777D70Cbe883F51"
+        ],
+        "proxy": {
+          "address": "0xe5bF3D6a1f70ad27B2671113fE513927d6e6565F",
+          "deployer": "0x95a8d4962fca4af2f4411426f645cBa911E59248",
+          "transactionHash": "0xe807a5d1358363c3b60f8a7d423ebb26002c01524176ab872b51098b34a20272",
+          "blockNumber": 72524950,
+          "timestamp": "2025-06-08T18:24:48.856Z",
+          "initializerArgs": {
+            "registryAddress": "0x382639a8eE38317eB8622e8eFCc0c47c0f481314",
+            "casinoId": "1",
+            "initialTreasuryOwner": "0x95a8d4962fca4af2f4411426f645cBa911E59248"
+          }
+        },
+        "vault": {
+          "address": "0xFeD023491724Bf2Aec1915f631Cd88236B254482",
+          "deployer": "0x95a8d4962fca4af2f4411426f645cBa911E59248",
+          "transactionHash": "0x634fe990991d624dcae3c3981eee3b8fdafc8163f1c9f630ed859e809c0ac867",
+          "blockNumber": 72524984,
+          "timestamp": "2025-06-08T18:26:28.277Z",
+          "constructorArgs": {
+            "usdt": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+            "usdc": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+            "aPolUsdt": "0x6ab707Aca953eDAeFBc4fD23bA73294241490620",
+            "aPolUsdc": "0xA4D94019934D8333Ef880ABFFbF2FDd611C762BD",
+            "aavePool": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
+            "chip": "0x14a2D1fA84600C40D62Bb2344777D70Cbe883F51",
+            "casinoTreasury": "0xe5bF3D6a1f70ad27B2671113fE513927d6e6565F",
+            "initialOwner": "0x95a8d4962fca4af2f4411426f645cBa911E59248",
+            "name": "SigmaVault",
+            "symbol": "sVUSD"
+          }
+        }
+      }
+    }
+  }
+}
